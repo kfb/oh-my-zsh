@@ -67,3 +67,8 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+# Platform-specific configuration
+envfile="$ZSH/zsh.`uname`"
+if [ -r $envfile ]; then
+    . $envfile
+fi
