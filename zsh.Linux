@@ -1,0 +1,5 @@
+# Linux Configuration
+alias ls='ls -lah --color=auto'
+
+alias pbcopy='xsel --clipboard --input'
+alias pbpaste='xsel --clipboard --output'
